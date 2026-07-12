@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noir & Gold — Artisan Coffee House</title>
+<meta name="description" content="Noir & Gold is a luxury artisan coffee house serving hand-crafted espresso, single-origin beans and fresh bakery in a warm, elegant setting.">
+<meta name="keywords" content="coffee shop, cafe, espresso, artisan coffee, luxury cafe, book a table">
+
+<!-- Fonts: Fraunces (display serif with character) + Manrope (clean modern body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Loading Screen ===== -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-cup">
+      <div class="loader-steam s1"></div>
+      <div class="loader-steam s2"></div>
+      <div class="loader-steam s3"></div>
+    </div>
+    <span class="loader-text">Noir &amp; Gold</span>
+  </div>
+</div>
+
+<!-- ===== Sticky Navigation ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">
+      <span class="logo-mark">N&amp;G</span>
+      <span class="logo-text">Noir <em>&amp;</em> Gold</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#contact" class="btn btn-gold btn-small nav-cta">Book a Table</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Hero Section ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80');"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-steam" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="hero-content" data-animate="fade-up">
+    <p class="eyebrow">Est. 2012 &mdash; Small Batch Roastery</p>
+    <h1 class="hero-title">Experience the Perfect<br><span>Cup of Coffee</span></h1>
+    <p class="hero-desc">Hand-roasted single-origin beans, poured with precision, served in a room built for slowing down. Welcome to your new favourite ritual.</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn btn-gold">Explore Menu</a>
+      <a href="#contact" class="btn btn-outline">Book a Table</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== About Section ===== -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-image" data-animate="fade-right">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80" alt="Barista preparing coffee inside Noir & Gold cafe">
+      <div class="about-image-badge">
+        <span class="badge-num">12+</span>
+        <span class="badge-label">Years of<br>Craft</span>
+      </div>
+    </div>
+
+    <div class="about-content" data-animate="fade-left">
+      <p class="eyebrow">Our Story</p>
+      <h2 class="section-title">Brewed with Passion,<br>Served with Soul</h2>
+      <p class="about-text">
+        Noir &amp; Gold began as a single roasting drum in the back of a Lahore side-street shop.
+        Today it's a destination for people who care about where their coffee comes from and how
+        it's made. We source directly from smallholder farms, roast in small batches every week,
+        and train every barista on our floor to treat each cup as a craft, not a commodity.
+      </p>
+      <p class="about-text">
+        Step inside and you'll find warm brass fixtures, low light, the hiss of the espresso
+        machine, and a menu built around beans that changed the way we think about flavour.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-number" data-count="12">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="48000">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="215000">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Coffees Served</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Featured Menu ===== -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <p class="eyebrow center">Featured Menu</p>
+      <h2 class="section-title center">Crafted Signatures</h2>
+      <p class="section-sub center">Eight favourites from our current seasonal menu, made to order by hand.</p>
+    </div>
+
+    <div class="menu-grid">
+
+      <article class="menu-card" data-animate="fade-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80" alt="Signature Espresso in a white cup with crema">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Signature Espresso</h3>
+            <span class="price">$4.50</span>
+          </div>
+          <p>Double shot, Ethiopian &amp; Brazilian blend, notes of dark chocolate and stone fruit.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" data-animate="fade-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Latte art in a ceramic cup">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Velvet Latte</h3>
+            <span class="price">$5.25</span>
+          </div>
+          <p>Steamed whole milk poured over espresso, finished with hand-poured latte art.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" data-animate="fade-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=700&q=80" alt="Cappuccino with cocoa dusting">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Classic Cappuccino</h3>
+            <span class="price">$4.90</span>
+          </div>
+          <p>Equal parts espresso, steamed milk and microfoam, dusted with Valrhona cocoa.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" data-animate="fade-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=80" alt="Iced coffee in a tall glass">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Gold Coast Iced Brew</h3>
+            <span class="price">$5.50</span>
+          </div>
+          <p>Slow cold-drip concentrate over ice, a hint of orange zest and raw cane sugar.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" data-animate="fade-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=700&q=80" alt="Barista pulling an espresso shot on a machine">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Flat White</h3>
+            <span class="price">$5.00</span>
+          </div>
+          <p>Ristretto shots layered with silky micro-foamed milk for a bold, smooth finish.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" data-animate="fade-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0b9?auto=format&fit=crop&w=700&q=80" alt="Fresh pastry and coffee pairing on a wooden table">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Almond Croissant Pairing</h3>
+            <span class="price">$7.20</span>
+          </div>
+          <p>Butter-laminated croissant, almond cream, served with your choice of house brew.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" data-animate="fade-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=700&q=80" alt="Mocha coffee topped with whipped cream">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Dark Mocha</h3>
+            <span class="price">$5.75</span>
+          </div>
+          <p>70% single-origin dark chocolate melted into espresso, topped with soft cream.</p>
+        </div>
+      </article>
+
+      <article class="menu-card" data-animate="fade-up">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=700&q=80" alt="Fresh whole coffee beans close up">
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Pour-Over of the Week</h3>
+            <span class="price">$6.00</span>
+          </div>
+          <p>Rotating single-origin lot, brewed fresh to order using the V60 method.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why Choose Us ===== -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <p class="eyebrow center">Why Choose Us</p>
+      <h2 class="section-title center">The Noir &amp; Gold Standard</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card" data-animate="fade-up">
+        <div class="why-icon"><i class="fa-solid fa-seedling"></i></div>
+        <h3>Fresh Coffee Beans</h3>
+        <p>Roasted weekly in small batches, sourced directly from farms we know by name.</p>
+      </div>
+      <div class="why-card" data-animate="fade-up">
+        <div class="why-icon"><i class="fa-solid fa-mug-hot"></i></div>
+        <h3>Expert Baristas</h3>
+        <p>Certified specialists who treat every pour as a small act of craftsmanship.</p>
+      </div>
+      <div class="why-card" data-animate="fade-up">
+        <div class="why-icon"><i class="fa-solid fa-couch"></i></div>
+        <h3>Cozy Atmosphere</h3>
+        <p>Warm light, soft seating and quiet corners built for lingering conversations.</p>
+      </div>
+      <div class="why-card" data-animate="fade-up">
+        <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Fast Service</h3>
+        <p>Efficient without ever feeling rushed &mdash; your order, done right, done quick.</p>
+      </div>
+      <div class="why-card" data-animate="fade-up">
+        <div class="why-icon"><i class="fa-solid fa-wifi"></i></div>
+        <h3>Free WiFi</h3>
+        <p>High-speed, reliable connectivity for remote work or catching up with friends.</p>
+      </div>
+      <div class="why-card" data-animate="fade-up">
+        <div class="why-icon"><i class="fa-solid fa-bread-slice"></i></div>
+        <h3>Fresh Bakery</h3>
+        <p>Laminated pastries and breads, baked in-house from first light every morning.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <p class="eyebrow center">Gallery</p>
+      <h2 class="section-title center">Moments at Noir &amp; Gold</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item tall" data-animate="fade-up">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Cozy interior seating area of the cafe">
+      </div>
+      <div class="gallery-item" data-animate="fade-up">
+        <img src="https://images.unsplash.com/photo-1495465798138-718f86d1a4bd?auto=format&fit=crop&w=800&q=80" alt="Close up of coffee cup with latte art">
+      </div>
+      <div class="gallery-item" data-animate="fade-up">
+        <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&w=800&q=80" alt="Espresso machine on the counter">
+      </div>
+      <div class="gallery-item tall" data-animate="fade-up">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=800&q=80" alt="Bright cafe counter with pastries on display">
+      </div>
+      <div class="gallery-item" data-animate="fade-up">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80" alt="Roasted coffee beans in a scoop">
+      </div>
+      <div class="gallery-item" data-animate="fade-up">
+        <img src="https://images.unsplash.com/photo-1506372023823-741c83b836fe?auto=format&fit=crop&w=800&q=80" alt="Cafe storefront and outdoor seating">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header" data-animate="fade-up">
+      <p class="eyebrow center">Testimonials</p>
+      <h2 class="section-title center">What Our Guests Say</h2>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card" data-animate="fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The best flat white I've had outside of Melbourne. The room itself makes you want to slow your whole day down."</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=150&q=80" alt="Portrait of customer Amelia Rhodes">
+          <div>
+            <h4>Amelia Rhodes</h4>
+            <span>Regular Guest</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-animate="fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"Every barista here knows my order and my name. That kind of care is rare, and the pour-over program is genuinely excellent."</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Portrait of customer Daniel Cho">
+          <div>
+            <h4>Daniel Cho</h4>
+            <span>Coffee Enthusiast</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-animate="fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"I work from Noir &amp; Gold twice a week. Fast WiFi, quiet corners, and the almond croissant is worth the trip alone."</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Portrait of customer Sara Malik">
+          <div>
+            <h4>Sara Malik</h4>
+            <span>Freelance Designer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info" data-animate="fade-right">
+      <p class="eyebrow">Get In Touch</p>
+      <h2 class="section-title">Visit or Reserve<br>Your Table</h2>
+      <p class="contact-lead">We take walk-ins, but a reservation guarantees your favourite corner seat.</p>
+
+      <ul class="contact-details">
+        <li><i class="fa-solid fa-location-dot"></i><span>24 Camden High Street, London, NW1 0JH</span></li>
+        <li><i class="fa-solid fa-phone"></i><span>+44 20 7946 0958</span></li>
+        <li><i class="fa-solid fa-envelope"></i><span>hello@noirandgold.cafe</span></li>
+        <li><i class="fa-solid fa-clock"></i><span>Mon &ndash; Fri: 7:00am &ndash; 8:00pm</span></li>
+      </ul>
+
+      <div class="map-embed">
+        <iframe
+          title="Noir and Gold Cafe location map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.955!2d-0.1426!3d51.5390!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDMyJzI0LjQiTiAwwrA4JzMzLjQiVw!5e0!3m2!1sen!2suk!4v1680000000000"
+          width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" data-animate="fade-left" novalidate>
+      <h3>Send Us a Message</h3>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests">
+            <option value="1-2">1 &ndash; 2 people</option>
+            <option value="3-4">3 &ndash; 4 people</option>
+            <option value="5+">5+ people</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your visit..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-gold btn-full">Send Message</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <a href="#home" class="logo">
+        <span class="logo-mark">N&amp;G</span>
+        <span class="logo-text">Noir <em>&amp;</em> Gold</span>
+      </a>
+      <p>A neighbourhood coffee house built around craft, patience and good conversation.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Opening Hours</h4>
+      <ul class="hours-list">
+        <li><span>Mon &ndash; Fri</span><span>7:00 &ndash; 20:00</span></li>
+        <li><span>Saturday</span><span>8:00 &ndash; 21:00</span></li>
+        <li><span>Sunday</span><span>8:00 &ndash; 18:00</span></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Seasonal menus and roast drops, once a month, no spam.</p>
+      <form class="footer-form" onsubmit="return false;">
+        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Noir &amp; Gold Coffee House. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== Back To Top ===== -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
